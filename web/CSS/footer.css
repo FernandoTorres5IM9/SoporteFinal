@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9/05/2018, 07:41:45 AM
+    Author     : Alumno
+*/
+
+
+/*Footer*/
+/*html{
+    min-height: 120%;
+    position: relative;
+}
+.pricipal{
+    margin-bottom: 100px;
+    
+}
+footer{
+  background: #000;
+  text-align: center;
+  color: #fff;
+  bottom: 0;
+  height: 100px; /* valor que necesites */
+  /*position: absolute;
+  width: 100%
+}*/
+footer{
+   padding: 1%;
+    margin-top: 0px;
+    color:#ffffff;
+    
+    background: #000;
+    text-align: center;
+}
+footer:hover{
+   background-color: black; 
+}

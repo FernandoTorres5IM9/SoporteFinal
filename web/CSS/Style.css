@@ -1,0 +1,1093 @@
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1/04/2018, 01:49:54 PM
+    Author     : Ana
+*/
+@import url(../CSS/menu.css);
+@import url(../CSS/footer.css);
+html{
+    box-sizing: border-box;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    overflow-x:hidden;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;    
+}
+*,*:before,*:after{
+    box-sizing:inherit;
+}
+body{
+    margin:0;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+    line-height:1.5;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-weight:400;
+    margin:10px 0
+}
+h1{
+    font-size:36px
+}
+h2{
+    font-size:30px
+}
+h3{
+    font-size:24px
+}
+h4{
+    font-size:20px
+}
+h5{
+    font-size:18px
+}
+h6{
+    font-size:16px
+}
+input{
+    font: inherit;    
+}
+article,aside,details,figcaption,figure,footer,header,main,section,summary{
+    display:block
+}
+
+.opcion{
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0;
+    white-space: normal;
+    display:inline-block;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+}
+.opcion:hover{
+    color:#000!important;
+    background-color:#ccc!important;
+}
+opcion:disabled{
+    cursor:not-allowed;
+    opacity:0.3;
+}
+.contenido{
+    position:relative; 
+    background-image: url("../IMGSOCUPABILIDAD/hospital.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 5%;
+    
+}
+@media(max-width:480px){
+    .contenido{
+        height: 300px;
+        overflow: hidden;
+        background-image: url("../IMGSOCUPABILIDAD/hospital.jpg");
+        
+        background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+background-attachment: fixed;
+    }
+    
+}
+@media (min-width:480px){
+    .contenido{
+        height: 600px;
+    }
+    
+}
+
+@media(min-width:768px){
+    .contenido{
+        height: 999px;
+    }
+    
+}
+
+/*.contenidoCam{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/camillero2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoCard{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/cardiologia2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoCont{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/contacto.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoDerm{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/dermatologia2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoDir{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/dir2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoEnf{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/enfermeria2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoEst{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/esterilizacion2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoFarm{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/farmacia2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoFin{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/finanzas2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoGin{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/ginecologia2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoHem{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/hematologia2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoHos{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/hospitalizacion2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoLab{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/laboratorio2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoMat{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/maternidad2.png");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoMg{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/mgeneral2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoMp{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/mpreventiva2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoNeu{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/neumologia2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoNut{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/nutricion2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoOd{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/odontologia2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoOf{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/oftalmologia2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoOnc{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/oncologia2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoOto{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/otorrinolaringologia2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoPed{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/pediatria2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoQui{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/quirofano2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoRad{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/radiologia2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoRe{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/rehabilitacion2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoSub{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/subdir2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoTer{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/terapia2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoTs{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/trabajos2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoUrg{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/urgencias2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}
+.contenidoUro{
+    margin:auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-image: url("../img/urologia2.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 3%;
+}*/
+.imagen{
+    width:100%;
+    height:auto;
+}
+.posicion{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    margin-top:16px!important;
+    display:inline-block;
+    width:auto;
+    text-align:center!important;
+}
+.letratitulo{
+    font-size:36px!important;
+}
+.title{
+    color:#fff!important;
+    background-color:#000!important;
+    padding:8px 16px!important;
+    opacity: .75;
+}
+.subtitulo{
+     color:#f1f1f1!important;
+}
+.pagina{
+    max-width:980px;
+    margin:auto;
+    padding:8px 16px!important;
+    background-color: white;
+}
+.areas{
+    padding-top:32px!important;
+    padding-bottom:32px!important;
+    width: auto;
+}
+.areas:after, .areas:before{
+    content:"";
+    display:table;
+    clear:both;
+}
+.bordes{
+    border-bottom:1px solid #ccc!important;
+    border-color:#f1f1f1!important;
+    padding-top:16px!important;
+    padding-bottom:16px!important;
+    width: 100%;
+}
+.columna{float:left;
+        width:100%;
+        width:49.99999%;
+        width:24.99999%;
+        margin-bottom:16px!important;
+}
+.filaespaciada, .filaespaciada>.columna{
+    padding:0 8px;
+}
+.filaespaciada:after, .filaespaciada:before{
+    content:"";
+    display:table;
+    clear:both;
+}
+/*elementos del home de ocupablidad*/
+.cuadro{
+    position: relative;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+}
+.nombre{
+    position:absolute;
+    left:0;
+    top:0;
+    color:#fff!important;
+    background-color:#000!important;
+    padding:8px 16px!important;
+}
+.pie{
+    display:inline-block;
+    width:100%;
+    text-align:center!important;
+    padding-top:16px!important;
+    padding-bottom:16px!important;
+    color:#fff!important;
+    background-color:#000!important;
+}
+.derecha{
+    float:right!important;
+}
+.color:hover{
+    color: #00bcd4;
+    cursor: pointer;
+}
+.boton{
+    display:block;
+    width:100%;
+    color:#000!important;
+    background-color:#f1f1f1!important;
+    white-space:normal;
+    text-align:left;
+    padding:8px 16px;
+    border:none;
+    display:inline-block;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.boton:hover{
+    color:#000!important;
+    background-color:#ccc!important;
+}
+.gris{
+    filter:grayscale(75%);
+}
+.opaco{
+    opacity:0.60;
+}
+.campo{
+    padding:8px;
+    display:block;
+    border:none;
+    width:100%;
+}
+.enviar{
+    border:none;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    padding:8px 16px;
+    white-space:normal;
+    color:#fff!important;
+    background-color:#000!important;
+    left:50%;
+    transform:translate(10%);
+    display:inline-block;
+    width:auto;
+    text-align:center!important;
+}
+.enviar:hover{
+    color:#000!important;
+    background-color:#ccc!important;
+}
+img.imgenv{
+    width: 20px;
+    display: block;
+    margin:auto;
+    float: left;
+}
+/*COLUMNAS DEL INICIO DE OCUPABILIDAD*/
+.contenedorT{
+    width: 99%;
+    margin: auto;
+}
+#tipo{
+    background: #fff;
+    color:black;
+    text-align: center;
+    padding: 10px;
+}
+.tipo-des a{
+    color:black;
+}
+.tipo-des{
+    margin: 20px;
+}
+#tipo .contenedorT{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tipo-des img{
+    width: 200px;
+    height: 170px;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+}
+.tipo-des img:hover {
+    filter: opacity(1);
+}
+@media (min-width:480px){
+    .tipo-des{
+        width: 40%;
+    }
+}
+@media (min-width:1024px){
+    .tipo-des{
+        width: auto;
+    }
+}
+/*COLUMNAS PARA CONTACTAR ESPECIALISTAS (OCUPABILIDAD)*/
+#tipoE{
+    background: #fff;
+    color:black;
+    text-align: center;
+    padding: 10px;
+}
+.tipoE-des a{
+    color:black;
+}
+.tipoE-des{
+    margin: 40px;
+}
+#tipoE .contenedorTE{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tipoE-des img{
+    width: 260px;
+    height: 170px;
+    -moz-filter:grayscale(100%);
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+}
+
+@media (min-width:480px){
+    .tipoE-des{
+        width: 40%;
+    }
+}
+@media (min-width:1024px){
+    .tipoE-des{
+        width: auto;
+    }
+}

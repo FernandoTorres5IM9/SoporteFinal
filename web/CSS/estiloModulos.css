@@ -1,0 +1,501 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-abr-2018, 10:57:03
+    Author     : Juan
+*/
+@import url(menu.css);
+@import url(footer.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    
+}
+
+body{
+   
+    background-color: #ffffff;
+   
+}
+.titulo{
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    color: #6E6E6E;
+    font-size: 23px;
+    
+}
+.texto{
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    color: #6E6E6E;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+/*Presentacion de modulos*/
+#bienvenidos{
+    text-align: center;
+}
+/*Imagen principal modulos*/
+.bannerM{
+    position: relative;
+    
+}
+.bannerM img{
+    width: 100%;
+    height: 100%;
+    -moz-filter:opacity(50%);
+    -webkit-filter:opacity(50%);
+    filter:opacity(50%);
+}
+.bannerM .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    text-align: center;
+}
+.bannerM h2{
+    font-size: 35px;
+    background: #6E6E6E;
+    width: 60%;
+}
+@media (min-width:480px){
+    
+    .bannerM h2{
+        font-size: 45px;
+        width: 50%;
+    }
+
+}
+@media (min-width:768px){
+    .bannerM{
+        height: 300px;
+        overflow: hidden;
+    }
+    .bannerM img{
+        height: auto;
+        margin-top: -100px;
+    }
+    .bannerM h2{
+        width: 40%;
+    }
+    .bannerM .contenedor{
+        left: 85%;    
+    }
+}
+@media (min-width:1024px){
+   
+    .bannerM img{
+        margin-top: -200px;
+    }
+    .bannerM h2{
+        width: 30%;
+        
+    }
+    .bannerM .contenedor{
+        left: 85%;
+        text-align: center;
+    }
+}
+/*object de consultas*/
+object{
+    margin: auto;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    max-height: 480px;
+}
+/*tarjetas materialize*/
+.adjust{
+    width: 100%;
+    overflow: hidden;
+    margin-left: 16%;
+    margin-top: 5%;
+}
+.adjust1{
+   width: 50%;
+    
+    padding: 0px;
+    float: left;
+    box-sizing: border-box; 
+}
+
+.adjust2{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+@media(max-width:800px){
+    .adjust{
+        margin: 0;
+    }
+    .adjust1{
+        width: 100%;
+    } 
+    .adjust2{
+        width: 100%;
+    }
+}
+
+/*Contenedores responsive */
+.form-register{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    background: #D8D8D8;     
+}
+    
+   
+.contenedor-inputs{
+    padding: 0 30px;
+}
+#caja{
+    width: 100%;
+    display: none;
+    height: 0px;
+    background: #6E6E6E;
+    
+    transition: height .7s;
+}
+#aparece{
+    margin: auto 80%;
+    overflow:hidden;
+    display: inline-block;
+    width: 20%;
+    align-items: center;   
+}
+
+
+/*Elementos del modulo de Especialistas*/
+#primeroEs{
+      background-image: url("../IMAGENES/ingenieros.jpg");
+    height: 350px;
+    padding: 10px;
+    overflow: hidden;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%); 
+}
+.paddingSeccionpsst{
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    width: 1110px;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-size: 23px;
+}
+
+.textAreaClass{
+    margin-top: 10px;
+    width: 80%;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#boton{
+    background: #31384A;
+    color: white;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+    
+    /*Elementos del modulo de MaterialRequerido*/    
+ #primeroMat{
+    background-image: url("../IMAGENES/evento.jpg");
+    height: 350px;
+    padding: 10px;
+    overflow: hidden;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%); 
+ } 
+ .opciones{
+     height: 400px;
+     min-width: 100%;
+   margin-top: 5%;
+     padding: 0;
+   
+    position: relative;
+   
+ }
+ .contopc{
+ 
+    
+     margin-left: 15%;
+     height: 75%;
+     width: 67%;
+     position: absolute;
+ }
+ .opc1{
+  
+     margin-left: 1%;
+     padding:0 ;
+     float: left;
+     width: 43%;
+     height: 100%;
+     position: absolute;
+     background-image: url("../IMAGENES/surgery-1662204_1280.jpg");
+     background-size: 120%;
+ }
+ .opc2{
+      background-color: blue;
+     margin-left: 56%;
+     padding:0 ;
+     float: left;
+     width: 43%;
+     height: 100%;
+     position: absolute; 
+     background-image: url("../IMAGENES/christ-chapel-2153525_1280.jpg");
+     background-size: 100%;
+ }
+  .opc3{
+      background-color: blue;
+     margin-left: 28%;
+     padding:0 ;
+     float: left;
+     width: 43%;
+     height: 100%;
+     position: absolute; 
+     background-image: url("../IMAGENES/Hospital.jpg");
+     background-size: 100%;
+ }
+ #opctext1{
+      background-color: #000033;
+      
+      opacity: 0;
+     margin:0;
+     padding:0 ;
+     float: left;
+     width: 100%;
+     height: 100%;
+     -webkit-transition: opacity 0.2s;
+     overflow: hidden;
+ }
+ .opc1:hover #opctext1{
+     opacity: 0.8;
+ }
+ .opc1:hover .textEfecct{
+     margin-left: 35%;
+ }
+  .opc2:hover #opctext2{
+    opacity: 0.8;
+ }
+ .opc2:hover .textEfecct{
+     margin-left: 35%;
+ }
+ .opc3:hover #opctext3{
+    opacity: 0.8;
+ }
+ .opc3:hover .textEfecct{
+     margin-left: 35%;
+ }
+ .textEfecct{
+     position:absolute;
+     margin-top: 25%;
+     -webkit-transition: margin 0.2s;
+     font-size:25px;
+     margin-left: -70px;
+     color: #ffffff;
+      font-family: "Lato", sans-serif;
+   
+    
+    
+    line-height: 1.8;
+ }
+ 
+ #opctext2{
+     background-color: #000033;
+   opacity: 0;
+     margin:0;
+     padding:0 ;
+     float: left;
+     width: 100%;
+     height: 100%;
+     -webkit-transition: opacity 0.2s;
+     overflow: hidden;
+ }
+  #opctext3{
+     background-color: #000033;
+   opacity: 0;
+     margin:0;
+     padding:0 ;
+     float: left;
+     width: 100%;
+     height: 100%;
+     -webkit-transition: opacity 0.2s;
+     overflow: hidden;
+ }
+ /*Fondo completo de inicio de modulos*/
+ /*EMERGENCIAS*/
+ .primer{
+    
+    background-image: url("../IMAGENES/evento.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 5%;
+}
+
+@media(max-width:480px){
+    .primer{
+        height: 300px;
+        background-position-y: -250px;
+        background-position-x:-600px;
+    }
+}
+@media (min-width:480px){
+    .primer{
+        height: 600px;
+    }
+}
+
+@media(min-width:768px){
+    .primer{
+        height: 999px;
+    }
+}
+ /*Especialistas*/
+ .primerE{
+    background-image: url("../IMAGENES/ingenieros.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 5%;
+}
+
+@media(max-width:480px){
+    .primerE{
+        height: 300px;
+        background-position-y: -250px;
+        background-position-x:-600px;
+    }
+}
+@media (min-width:480px){
+    .primerE{
+        height: 600px;
+    }
+}
+
+@media(min-width:768px){
+    .primerE{
+        height: 999px;
+    }
+}
+
+
+/*MATERIAL*/
+ .primerM{
+    
+    background-image: url("../IMAGENES/document-3271743_960_720.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 5%;
+}
+
+@media(max-width:480px){
+    .primerM{
+        height: 300px;
+        background-position-y: -250px;
+        background-position-x:-600px;
+    }
+}
+@media (min-width:480px){
+    .primerM{
+        height: 600px;
+    }
+}
+
+@media(min-width:768px){
+    .primerM{
+        height: 999px;
+    }
+}
+
+
+/*ESTILOS DE LETRAS DE IMAGEN PRINCIPAL DE MODULOS*/
+ .posicion{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    margin-top:16px!important;
+    display:inline-block;
+    width:auto;
+    text-align:center!important;
+}
+.letratitulo{
+    font-size:36px!important;
+}
+.title{
+    color:#fff!important;
+    background-color:#000!important;
+    padding:8px 16px!important;
+    opacity: .75;
+}
+.subtitulo{
+     color:#f1f1f1!important;
+}
+
+

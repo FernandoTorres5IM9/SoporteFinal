@@ -1,0 +1,85 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7/05/2018, 10:05:38 PM
+    Author     : juano
+*/
+
+
+/*Estilo de la imagen principal*/
+.primer{
+    
+    background-image: url("../IMAGENES/quirofano.jpg");
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-filter:opacity(70%);
+    -webkit-filter:opacity(70%);
+    filter:opacity(70%);
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0;
+    overflow: hidden;
+    padding: 5%;
+}
+.contnom{
+    padding: 1%;
+    width: 50%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:auto;
+    text-align: center;
+    background-color: black;
+    font-size: 18px; 
+    font-family: Arial;
+    color: #ffffff;
+}
+@media(max-width:480px){
+    .primer{
+        height: 600px;
+    }
+    .contnom{
+        margin-top: 250px;
+        font-size: 32px; 
+        margin-left: 35px;
+        width: 80%;
+    }
+}
+@media (min-width:480px){
+    .primer{
+        height: 900px;
+    }
+    .contnom{
+        margin-top: 350px;
+        font-size: 36px; 
+    }
+}
+
+@media(min-width:768px){
+    .primer{
+        height: 999px;
+    }
+    .contnom{
+        margin-top: 380px;
+        font-size: 38px; 
+
+    }
+}
+
+@media(min-width:1024px){
+    .primer{
+        height: 1000px;
+    }
+    .contnom{
+        margin-top: 380px;
+        font-size: 35px; 
+        width: 50%;
+    }
+}
